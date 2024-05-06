@@ -1,7 +1,7 @@
 import { useState} from 'react';
 import { View, Text, TextInput, TouchableOpacity, FlatList, StyleSheet } from 'react-native';
 
-const DetailsScreen = () => {
+const ListScreen = () => {
     // Estados
     const [task, setTask] = useState('');
     const [tasks, setTasks] = useState([]);
@@ -48,6 +48,7 @@ const DetailsScreen = () => {
               <Text style={styles.task}>{item.text}</Text>
             </TouchableOpacity>
           )}
+          
         />
       </View>
       </>
@@ -100,5 +101,5 @@ const styles = StyleSheet.create({
     },
 });
   
-  export default DetailsScreen;
+  export default ListScreen;
   

@@ -4,9 +4,9 @@ import { View, Text, Button} from 'react-native';
 const HomeScreen = ({navigation}) => {
     return(
       <View>
-        <Text>Inicio de la Aplicación</Text>
+        <Text style={{margin: 50, textAlign: 'center', fontWeight: 'bold', }}>Inicio de la Aplicación</Text>
         <Button 
-        title='Ir  A Detalles'
+        title='Ir  A Lista de Tareas'
         onPress={() => navigation.navigate("Lista")} 
         />
         <Button 

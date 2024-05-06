@@ -1,6 +1,6 @@
 import ContadorScreen from './src/screens/ContadorScreen.js';
 import HomeScreen from './src/screens/HomeScreen.js';
-import DetailsScreen from './src/screens/DetailsScreen.js';
+import ListScreen from './src/screens/ListScreen.js';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -21,7 +21,7 @@ const App = () => {
           ),
         }}
         />
-        <Tab.Screen name='Lista' component={DetailsScreen} 
+        <Tab.Screen name='Lista' component={ListScreen} 
         options={{
           tabBarLabel: 'Lista',
           tabBarIcon: ({ color }) => (
